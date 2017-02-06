@@ -56,6 +56,7 @@
 
 /* @import url("https://cdn.rawgit.com/SnazzyPine25/BeautifulDiscordThemes/master/skype.css"); */
 @import url("https://cdn.rawgit.com/SnazzyPine25/BeautifulDiscordSnippets/master/Misc/Windows7.css");
+@import url("https://cdn.rawgit.com/SnazzyPine25/BeautifulDiscordSnippets/master/ContextMenu/Windows10.css");
 
 /* Message Box */
 .theme-light .channel-textarea-inner textarea, .modal .channel-textarea-inner textarea {
@@ -474,112 +475,6 @@
 }
 
 /* Dark Mode Scrollbar */
-
-/* Context Menu */
-
-.context-menu.theme-dark,
-.context-menu.theme-dark .context-menu,
-.theme-dark .context-menu {
-    border-radius: 0px ;
-    background: #000 !important;
-    border: 1px solid #393939;
-}
-
-.context-menu, .context-menu .context-menu {
-    -webkit-animation: sub-contextmenu-anim 200ms ease-in-out;
-    animation: sub-contextmenu-anim 200ms ease-in-out;
-}
-.context-menu.theme-dark .item-subMenu {
-    background: url(/assets/e4afe52f6863408a35654a6e5fd69ba9.svg) 155px 50% no-repeat rgba(0,0,0,0) !important;
-}
-
-.context-menu.theme-dark .item-subMenu:hover {
-    border-radius: 0px;
-    background: url(/assets/e4afe52f6863408a35654a6e5fd69ba9.svg) 155px 50% no-repeat #262626 !important;
-    transition: all 0.2s ease;
-}
-
-.context-menu.theme-dark .item:hover,
-.theme-dark .context-menu .item:hover {
-    border-radius: 0px;
-    background: #262626;
-    transition: all 0.2s ease;
-}
-
-.context-menu.theme-dark .item,
-.theme-dark .context-menu .item .region-select-name,
-.theme-dark .context-menu .item  {
-    color: #fff !important;
-    transition: all 0.2s ease;
-}
-
-.theme-dark .context-menu .item .check {
-    background: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_done_white_24px.svg);
-    background-size: cover;
-    width: 20px;
-    height: 16px;
-    transform: translateY(-3px);
-}
-
-@-webkit-keyframes sub-contextmenu-anim {
-    from {
-        transform: translateX(20px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0px);
-        opacity: 1;
-    }
-}
-
-@keyframes sub-contextmenu-anim {
-    from {
-        transform: translateX(20px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0px);
-        opacity: 1;
-    }
-}
-
-.context-menu.theme-light .item,
-.theme-light .context-menu .item .region-select-name,
-.theme-light .context-menu .item {
-    color: #000 !important;
-    transition: all 0.2s ease;
-}
-
-.context-menu.theme-light .item-subMenu:hover {
-    border-radius: 0px;
-    background: url(/assets/e4afe52f6863408a35654a6e5fd69ba9.svg) 155px 50% no-repeat #e8e8e8 !important;
-    transition: all 0.2s ease;
-}
-
-.theme-light .context-menu .item .check {
-    background: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_done_black_24px.svg);
-    background-size: cover;
-    width: 20px;
-    height: 16px;
-    transform: translateY(-3px);
-}
-
-.context-menu.theme-light .item:hover,
-.theme-light .context-menu .item:hover {
-    border-radius: 0px;
-    background: #e8e8e8;
-    transition: all 0.2s ease;
-}
-
-.context-menu.theme-light,
-.context-menu.theme-light .context-menu,
-.theme-light .context-menu {
-    border-radius: 0px ;
-    background: #fff !important;
-    border: 1px solid #a4a4a4;
-}
-
-/* Context Menu */
 
 /* Private Calls */
 
