@@ -134,6 +134,10 @@
     transition: all 0.2s ease;
 }
 
+.theme-dark .channel-textarea-autocomplete-inner ul li {
+    transition: all 0.2s ease;
+}
+
 /* Message Box Auto-Complete */
 
 /* Messages */
@@ -396,7 +400,7 @@
     background-color: #050505 !important;
 }
 
-.theme-dark .message-group .comment code.inline {
+.theme-dark .message-group .comment .body code.inline {
     background-color: #111 !important;
 }
 
@@ -408,6 +412,19 @@
 .theme-dark .message-group .comment pre code {
     background-color: #333 !important;
     border-radius: 2px;
+}
+
+.theme-dark .channel-members .member:hover {
+    background: #222;
+    transition: background 0.2s ease;
+}
+
+.channel-members .member {
+    transition: background 0.2s ease;
+}
+
+.channel-members .member:hover {
+    transition: background 0.2s ease;
 }
 
 /* Dark Mode Tweaks */
