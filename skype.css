@@ -55,6 +55,7 @@
 */
 
 /* @import url("https://cdn.rawgit.com/SnazzyPine25/BeautifulDiscordThemes/master/skype.css"); */
+@import url("https://cdn.rawgit.com/SnazzyPine25/BeautifulDiscordSnippets/master/Misc/Windows7.css");
 
 /* Message Box */
 .theme-light .channel-textarea-inner textarea, .modal .channel-textarea-inner textarea {
@@ -315,37 +316,6 @@
 
 /* Pinned Messages Fix */
 
-/* Windows 7 Buttons, Credit to TripingPC (Discord: TripingPC#2094) */
-
-.modal .btn-primary{
-    background-image: -webkit-repeating-linear-gradient(top,rgb(252, 252, 252) 0%,rgb(235, 235, 235) 50%,rgb(221, 221, 221) 51%,rgb(207, 207, 207) 100%);
-    background-size: cover;
-    color:#202020!important;
-    border:#707070 1px solid!important;
-    font-family:Segoe UI;
-    font-size:12px!important;
-    box-shadow:none;
-    border-radius: 2px;
-    border-color:#3DCDF0!important;
-    box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,0.5);
-    transition:all 0.2s ease;
-}
-
-.modal .btn-primary:hover{
-    transition:all 0.2s ease;
-    border-color:#3C7FB1!important;
-    box-shadow: inset 0px 0px 0px 1px rgba(61, 205, 240, 0.68);
-}
-
-.modal .btn-primary:active{
-    transition:all 0.2s ease;
-    background-image: -webkit-repeating-linear-gradient(top,rgb(235, 246, 252) 0%,rgb(229, 243, 251) 50%,rgb(203, 232, 248) 51%,rgb(118, 214, 245) 100%);
-    border-color:#3C7FB1!important;
-    box-shadow: inset 0px 0px 0px 1px rgba(61, 205, 240, 0.68);
-}
-
-/* Windows 7 Buttons, Credit to TripingPC (Discord: TripingPC#2094) */
-
 /*
 .status-online {
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+Cjxzdmcgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogPGc+CiAgPHRpdGxlPkxheWVyIDE8L3RpdGxlPgogIDxwYXRoIGlkPSJzdmdfMSIgZmlsbD0ibm9uZSIgZD0ibTAsMGwyNCwwbDAsMjRsLTI0LDBsMCwtMjR6Ii8+CiAgPHBhdGggc3Ryb2tlLW9wYWNpdHk9IjAiIHN0cm9rZT0iIzAwMDAwMCIgZmlsbD0iI2ZmZmZmZiIgaWQ9InN2Z18yIiBkPSJtOSwxNi4ybC00LjIsLTQuMmwtMS40LDEuNGw1LjYsNS42bDEyLC0xMmwtMS40LC0xLjRsLTEwLjYsMTAuNnoiLz4KIDwvZz4KPC9zdmc+) 40% no-repeat;
@@ -550,7 +520,6 @@
     height: 16px;
     transform: translateY(-3px);
 }
-
 
 @-webkit-keyframes sub-contextmenu-anim {
     from {
