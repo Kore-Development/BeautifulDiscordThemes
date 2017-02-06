@@ -1,3 +1,61 @@
+/*
+
+
+                       ##########                                                                   
+                ########################                                                            
+             ###################################################                                    
+          ###########################################################                               
+        #################################################################                           
+      #######################################################################                       
+     ###########################################################################                    
+    ##############################################################################                  
+   #################################################################################                
+  ####################################################################################              
+ #######################################################################################            
+ ##################################      ###################      #######################           
+##############################      #############################       ##################          
+#########################       ####                              ##        ################        
+#######################     ##                                         #       ##############       
+######################                                                     #    ##############      
+ ####################                                                           ##############      
+ ###################                                                              ##############    
+  #################                                                               ##############    
+  ################                                                                 ##############   
+    ##############                                                                  #############   
+    #############                                                                   ##############  
+   ##############                                                                    #############  
+   #############                    #######               ########                    ############  
+   #############                  ##########             ###########                  ############  
+   ############                  #############          ############                  ############  
+   ############                  #############          ############                  ############  
+   ###########                   ############           ############                   ###########  
+   ###########                    ##########             ##########                    ###########  
+    ##########                        ####                  ####                        #########   
+    ##########                                                                          ##########  
+    ##########                                                                          ########### 
+     #########               ##                                        ###              ############
+      #########                 ####                              #####               ##############
+      ##########                    ########              # #######                  ###############
+        ###########                  ############################                 ##################
+        ################           ################################            #####################
+          ####################### ##################################################################
+           #########################################################################################
+            ########################################################################################
+              ######################################################################################
+                ################################################################################### 
+                  ################################################################################  
+                    #############################################################################   
+                      ##########################################################################    
+                          ####################################################################      
+                             ###############################################################        
+                                  ########################################################          
+                                        ###############################################             
+                                                               ####################                 
+
+*/
+
+/* @import url("https://cdn.rawgit.com/SnazzyPine25/BeautifulDiscordThemes/master/skype.css"); */
+
 /* Message Box */
 .theme-light .channel-textarea-inner textarea, .modal .channel-textarea-inner textarea {
     color: #000 !important;
@@ -38,6 +96,11 @@
     filter: none !important;
     opacity: 1;
     transform: none !important;
+}
+
+.channel-textarea-emoji:hover,
+.channel-textarea-emoji {
+    transition: all 0.2s ease;
 }
 /* Message Box */
 
@@ -109,7 +172,8 @@
 
 .message-group .comment .message .accessory .attachment-image a .image,
 .message-group .comment .message .accessory .embed-thumbnail-image .image,
-.message-group .comment .message .accessory .embed-thumbnail-image .image canvas {
+.message-group .comment .message .accessory .embed-thumbnail-image .image canvas,
+.message-group .comment .message .accessory .embed-wrapper {
     max-width: 100%;
 }
 
@@ -125,6 +189,10 @@
 
 .message-group .comment  {
     margin-top: 10px;
+}
+
+.theme-light .message-group .comment .message-text .markup  {
+    color: rgba(0,0,0,.8);
 }
 
 .message-group  {
@@ -187,6 +255,35 @@
 }
 
 /* Messages */
+
+/* System Messages */
+
+.system-message {
+    margin-top: 10px;
+}
+
+.message-group.is-local-bot-message {
+    background-image: none !important; 
+    border-color: transparent;
+    box-shadow:  none !important;
+}
+
+.theme-dark .message-group.is-local-bot-message .comment {
+    background-color: #141414;
+}
+
+.theme-dark .message-group.is-local-bot-message .comment:before {
+    border-color: transparent #141414;
+}
+
+.theme-light .message-group.is-local-bot-message .comment .local-bot-message {
+    color: rgba(79,84,92,.9);
+}
+
+.theme-light .message-group.is-local-bot-message .comment {
+    background-color: #92defc;
+}
+/* System Messages */
 
 /* Pinned Messages / Recent Mentions Fix */
 
@@ -313,7 +410,6 @@
     border-radius: 2px;
 }
 
-
 /* Dark Mode Tweaks */
 
 /* Dark Mode Search */
@@ -394,7 +490,9 @@
 
 /* Context Menu */
 
-.context-menu.theme-dark, .context-menu.theme-dark .context-menu {
+.context-menu.theme-dark,
+.context-menu.theme-dark .context-menu,
+.theme-dark .context-menu {
     border-radius: 0px ;
     background: #000 !important;
     border: 1px solid #393939;
@@ -414,14 +512,26 @@
     transition: all 0.2s ease;
 }
 
-.context-menu.theme-dark .item:hover {
+.context-menu.theme-dark .item:hover,
+.theme-dark .context-menu .item:hover {
     border-radius: 0px;
     background: #262626;
     transition: all 0.2s ease;
 }
 
-.context-menu.theme-dark .item {
+.context-menu.theme-dark .item,
+.theme-dark .context-menu .item .region-select-name,
+.theme-dark .context-menu .item  {
     color: #fff !important;
+    transition: all 0.2s ease;
+}
+
+.theme-dark .context-menu .item .check {
+    background: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_done_white_24px.svg);
+    background-size: cover;
+    width: 20px;
+    height: 16px;
+    transform: translateY(-3px);
 }
 
 
@@ -447,7 +557,9 @@
     }
 }
 
-.context-menu.theme-light .item {
+.context-menu.theme-light .item,
+.theme-light .context-menu .item .region-select-name,
+.theme-light .context-menu .item {
     color: #000 !important;
     transition: all 0.2s ease;
 }
@@ -458,16 +570,133 @@
     transition: all 0.2s ease;
 }
 
-.context-menu.theme-light .item:hover {
+.theme-light .context-menu .item .check {
+    background: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_done_black_24px.svg);
+    background-size: cover;
+    width: 20px;
+    height: 16px;
+    transform: translateY(-3px);
+}
+
+.context-menu.theme-light .item:hover,
+.theme-light .context-menu .item:hover {
     border-radius: 0px;
     background: #e8e8e8;
     transition: all 0.2s ease;
 }
 
-.context-menu.theme-light, .context-menu.theme-light .context-menu {
+.context-menu.theme-light,
+.context-menu.theme-light .context-menu,
+.theme-light .context-menu {
     border-radius: 0px ;
     background: #fff !important;
     border: 1px solid #a4a4a4;
 }
 
 /* Context Menu */
+
+/* Private Calls */
+
+.private-channel-call {
+    background: -webkit-radial-gradient(circle, #000 50%, #0192c8) !important;
+}
+
+.private-channel-call .quick-region-select {
+    background: rgba(255,255,255,0.1);
+    border-radius: 5px;
+    display: flex;
+    box-shadow: 0px 4px 0px rgba(255,255,255,0.2) !important;
+}
+
+.quick-region-select label {
+    padding: 5px 2px 5px 5px;
+}
+
+.quick-region-select div {
+    padding: 5px 5px 5px 3px;
+    margin: 0 !important;
+    transition: background .2s ease;
+    border-radius: 0 5px 5px 0;
+}
+
+.quick-region-select div:hover {
+    background: rgba(255,255,255,0.1);
+    transition: background .2s ease;
+}
+
+.quick-region-select div.popout-open {
+    background: rgba(255,255,255,0.2);
+    transition: background .2s ease;
+}
+
+.private-channel-call-actions {
+    background: rgba(255,255,255,0.1);
+    box-shadow: 0px 4px 0px rgba(255,255,255,0.2) !important;
+    padding: 10px 0px;
+    border-radius: 5px;
+    -webkit-animation: editmsg-anim 200ms ease-in-out;
+    animation: editmsg-anim 200ms ease-in-out;
+}
+
+.chat .quick-region-select {
+    -webkit-animation: editmsg-anim 200ms ease-in-out;
+    animation: editmsg-anim 200ms ease-in-out;
+}
+
+.private-channel-call-actions .btn-danger {
+    float: right;
+    position: relative;
+    height: 26px;
+    min-width: 26px;
+    width: 26px;
+    background: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_call_end_white_24px.svg) center center no-repeat #f04747 !important;
+    background-size: 80% !important;
+    color: rgba(0,0,0,0);
+    transition: background .2s ease;
+}
+
+.private-channel-call-actions .btn-danger:hover {
+    background: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_call_end_white_24px.svg) center center no-repeat #ea5e5e !important;
+    background-size: 80% !important;
+    transition: background .2s ease;
+}
+
+.private-channel-call-participants .call-avatar .avatar-xxlarge.speaking {
+    border: 1px solid #0192c8;
+    box-shadow: 0px 0px 20px #0192c8 !important;
+    transition: all 0.2s ease;
+}
+
+.private-channel-call-participants .ripple.out-of-focus {
+    border-radius: 0px;
+}
+
+.private-channel-call-participants .call-avatar .status-muted,
+.private-channel-call-participants .call-avatar .status-deafened {
+    border: none;
+}
+
+.theme-light .chat .quick-region-select .label {
+    color: #949494;
+}
+
+.theme-light .chat .quick-region-select .region {
+    color: #fff;
+}
+
+.chat .quick-region-select .icon {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5IiBoZWlnaHQ9IjUiPgogIDxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTQuNjkxMjE1MzMgNC42NzM3NzIwNWMtLjAwMzI3NjQuMDAzMjc2NDItLjAwNjQ3MTYzLjAwNjQ3MTY0LS4wMDk1Nzg4Ni4wMDk1Nzg4N2wtLjMzMDQzODQuMzMwNDM4NEwuMDAyMzc1MjcuNzMwMDk5ODcuNzI4Mzg1NDMuMDA0MDg5NzMgNC40OTE0MDk0OCAzLjc2NzExMzhsMy43ODAyNTcyLTMuNzgwMjU3MjIuNzI2MDEwMTQuNzI2MDEwMTMtNC4xMzM3MDU2NyA0LjEzMzcwNTctLjE3Mjc3ODA3LS4xNzI3NzgwNnoiLz4KPC9zdmc+) !important;
+}
+
+.theme-light .chat .private-channel-call .btn-icon:after {
+    opacity: .6;
+}
+
+.theme-light .chat .private-channel-call .btn-icon {
+    background: #36393e;
+}
+.theme-light .chat .private-channel-call .btn-icon:hover {
+    background: #4a4e55;
+}
+
+/* Private Calls */
