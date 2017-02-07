@@ -264,7 +264,12 @@
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: 16px;
+    opacity: 1 !important;
+}
 
+.theme-light .messages-wrapper .messages .divider span,
+.theme-light .messages-wrapper {
+    background-color: #f4f8fb !important;
 }
 
 /* Messages */
@@ -764,3 +769,93 @@
 .account .btn:after{margin-left:0px;}
 
 /* Account Buttons */
+
+/* Private Messages */
+
+.private-channels .btn-friends .badge,
+.private-channels .channel .close {
+    position: relative;
+    left: -10px;
+}
+
+.theme-light .private-channels {
+    transition: all 0.2s ease;
+    background-color: #fff;
+}
+
+.theme-light .private-channels .channel .status {
+    transition: all 0.2s ease;
+    border-color: #fff;
+}
+
+.theme-light .private-channels .channel:hover .status,
+.theme-light .private-channels .channel.selected .status {
+    transition: all 0.2s ease;
+    border-color: #24a9e2;
+}
+
+.theme-light .private-channels .channel:not(.selected):hover .status {
+    transition: all 0.2s ease;
+    border-color: #45c0f3;
+}
+
+.theme-light .private-channels .channel-name,
+.theme-light .private-channels .search-result-name {
+    transition: all 0.2s ease;
+    color: #000;
+    opacity: 1;
+}
+.theme-light .private-channels .channel:hover .channel-activity,
+.theme-light .private-channels .channel.selected .channel-activity {
+    transition: all 0.2s ease;
+    color: #fff;
+    opacity: 0.7;
+}
+
+.theme-light .private-channels .channel.selected,
+.theme-light .private-channels .search-result.selected {
+    transition: all 0.2s ease;
+    background: #24a9e2;
+}
+
+.theme-light .private-channels .channel:not(.selected):hover,
+.theme-light .private-channels .search-result:not(.selected):hover {
+    transition: all 0.2s ease;
+    background: #45c0f3;
+}
+
+.theme-light .private-channels .channel:hover .channel-name,
+.theme-light .private-channels .channel.selected .channel-name {
+    transition: all 0.2s ease;
+    color: #fff;
+}
+
+.theme-light .private-channels .channel {
+    transition: all 0.2s ease;
+}
+
+.theme-light .private-channels .channel:before,
+.theme-light .private-channels .search-result:before {
+    opacity: 0 !important;
+}
+
+.theme-light .private-channels .channel .icon-friends {
+    background: url(/assets/78edad9e528abdda340ef4341ac52b57.svg) 50% no-repeat #000;
+    transition: all 0.2s ease;
+}
+
+.theme-light .private-channels .channel:hover .icon-friends {
+    background: url(/assets/78edad9e528abdda340ef4341ac52b57.svg) 50% no-repeat #45c0f3;
+    transition: all 0.2s ease;
+}
+
+.theme-light .private-channels .channel.selected .icon-friends {
+    background: url(/assets/78edad9e528abdda340ef4341ac52b57.svg) 50% no-repeat #24a9e2;
+    transition: all 0.2s ease;
+}
+
+.theme-light .private-channels header {
+    color: #111;
+}
+
+/* Private Messages */
