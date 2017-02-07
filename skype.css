@@ -267,11 +267,6 @@
     opacity: 1 !important;
 }
 
-.theme-light .messages-wrapper .messages .divider span,
-.theme-light .messages-wrapper {
-    background-color: #f4f8fb !important;
-}
-
 /* Messages */
 
 /* System Messages */
@@ -780,12 +775,12 @@
 
 .theme-light .private-channels {
     transition: all 0.2s ease;
-    background-color: #fff;
+    background-color: #f4f8fb;
 }
 
 .theme-light .private-channels .channel .status {
     transition: all 0.2s ease;
-    border-color: #fff;
+    border-color: #f4f8fb;
 }
 
 .theme-light .private-channels .channel:hover .status,
@@ -821,7 +816,9 @@
 .theme-light .private-channels .channel:not(.selected):hover,
 .theme-light .private-channels .search-result:not(.selected):hover {
     transition: all 0.2s ease;
-    background: #45c0f3;
+    background: transparent;
+    box-shadow: inset 226px 0px 0px 0px #45c0f3;
+    transition: box-shadow 0.17s ease-out;
 }
 
 .theme-light .private-channels .channel:hover .channel-name,
@@ -858,4 +855,137 @@
     color: #111;
 }
 
+.channel{
+    transition: box-shadow 0.2s ease-out;
+}
+
+.theme-light .private-channels .search-bar .search-bar-inner {
+    border: 1px solid #aacce5;
+    opacity: 1;
+}
+
+.theme-light .private-channels .search-bar .search-bar-inner input::-webkit-input-placeholder {
+    color: rgba(255,255,255,0.7);
+}
+
+.theme-light .private-channels .search-bar {
+    box-shadow: 0 1px 0 #c7d8e5;
+    background-color: #f4f8fb;
+    border-radius: 0;
+}
+
+.theme-light .private-channels .search-bar .search-bar-icon .icon.visible {
+    opacity: 0.5;
+}
+
 /* Private Messages */
+
+/* Guild Channels */
+
+.theme-light .guild-channels,
+.theme-light .guild-header header {
+    background-color: #f4f8fb;
+}
+
+.theme-light .guild-channels header {
+    color: #111;
+}
+
+.theme-light .guild-channels .channel .channel-name,
+.theme-light .guild-channels .channel.selected .channel-name {
+    color: #000;
+}
+
+.theme-light .guild-channels .channel:not(.selected) a {
+    opacity: .5;
+}
+
+.theme-light .guild-channels .channel-text.channel-muted:not(.selected) span {
+    opacity: .4;
+}
+
+.theme-light .guild-channels .channel.selected .channel-name:before,
+.theme-light .guild-channels .channel:hover .channel-name:before {
+    color: #fff !important;
+    transition: all 0.2s ease;
+}
+
+.theme-light .guild-channels .channel .channel-name:before {
+    transition: all 0.2s ease;
+}
+
+.theme-light .guild-channels .channel:not(.selected):hover {
+    transition: all 0.2s ease;
+    background: transparent;
+    box-shadow: inset 226px 0px 0px 0px #45c0f3;
+    transition: box-shadow 0.17s ease-out;
+}
+
+.theme-light .guild-channels .channel.unread:before {
+    opacity: 0 !important;
+}
+
+.theme-light .guild-channels .channel.selected {
+    transition: all 0.2s ease;
+    background: #24a9e2;
+}
+
+.theme-light .guild-channels .channel-voice .channel-arrow {
+    background: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_keyboard_arrow_right_black_24px.svg) 60% 50% no-repeat;
+    transition: box-shadow 0.17s ease-out;
+    background-position: center center;
+}
+
+.theme-light .guild-channels .channel-voice .channel-arrow:hover {
+    background-color: transparent;
+    transition: box-shadow 0.2s ease-out;
+    box-shadow: inset 20px 0px 0px 0px rgba(0,0,0,0.2);
+}
+
+.theme-light .guild-channels .channel .channel-voice-states span {
+    color: #222;
+    transition: all 0.2s ease;
+}
+
+.theme-light .guild-channels .channel .channel-voice-states div[draggable*="true"]:hover span {
+    color: #fff;
+    transition: all 0.2s ease;
+}
+
+.theme-light .guild-header header span {
+    color: #000;
+    font-weight: 600;
+}
+
+.theme-light .guild-header header {
+    box-shadow: 0 1px 0 #c7d8e5;
+}
+
+/* Guild Channels */
+
+/* Embed Buttons */
+
+.embed .embed-video-actions .embed-video-actions-inner {
+    background: rgba(0,0,0,0.1);
+    box-shadow: 0px 4px 0px rgba(255,255,255,0.2) !important;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+}
+
+.embed .embed-video-actions .embed-video-actions-inner:hover {
+    background: rgba(0,0,0,0.4);
+    box-shadow: 0px 4px 0px rgba(255,255,255,0.6) !important;
+    transition: all 0.2s ease;
+}
+
+.embed-video-play {
+    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_play_arrow_white_24px.svg) !important;
+}
+
+.embed-video-popout {
+    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_launch_white_24px.svg) !important;
+}
+
+
+
+/* Embed Buttons */
