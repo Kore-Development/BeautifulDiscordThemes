@@ -1000,6 +1000,10 @@
     color: #111;
 }
 
+.theme-light .guild-header {
+    box-shadow: 0 0 5px solid #f4f8fb;
+}
+
 .theme-light .guild-channels .channel .channel-name,
 .theme-light .guild-channels .channel.selected .channel-name {
     color: #000;
@@ -1068,6 +1072,10 @@
 
 .theme-light .guild-header header {
     box-shadow: 0 1px 0 #c7d8e5;
+}
+
+.theme-light .guild-header .dropdown-button path[stroke*="#FFF"] {
+    stroke: #000;
 }
 
 /* Guild Channels */
