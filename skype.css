@@ -222,11 +222,7 @@
     max-width: 100%;
 }
 
-.message-group .comment .first.message h2  {
-    margin-top: -22px;
-    top: -5px;
-}
-
+.message-group .comment .first.message h2,
 .message-group > .comment > h2  {
     margin-top: -22px;
     top: -5px;
@@ -240,13 +236,21 @@
     color: rgba(0,0,0,.8);
 }
 
-.message-group  {
+.message-group {
     border: 0px;
     margin-top: -20px;
 }
 
-.messages .empty-message, .messages .divider, .messages .has-more {
+.messages .empty-message, .messages .divider, .messages .has-more, .message-group-blocked {
     margin-bottom: 20px;
+}
+
+.message-group-blocked .message-group {
+    margin-top: -10px;
+}
+
+.message-group-blocked {
+    margin-top: -5px;
 }
 
 .message-group .comment .mention  {
@@ -456,6 +460,15 @@
 
 .channel-members .member:hover {
     transition: background 0.2s ease;
+}
+
+.theme-dark .message-group-blocked,
+.theme-dark .message-group-blocked-btn {
+    background-color: #111 !important;
+}
+
+.theme-dark .message-group-blocked {
+    border-color: #222 !important;
 }
 
 /* Dark Mode Tweaks */
