@@ -678,12 +678,12 @@
     animation: sub-contextmenu-anim 200ms ease-in-out;
 }
 .context-menu.theme-dark .item-subMenu {
-    background: url(/assets/e4afe52f6863408a35654a6e5fd69ba9.svg) 155px 50% no-repeat rgba(0,0,0,0) !important;
+    background: url(https://canary.discordapp.com/assets/e4afe52f6863408a35654a6e5fd69ba9.svg) 155px 50% no-repeat rgba(0,0,0,0) !important;
 }
 
 .context-menu.theme-dark .item-subMenu:hover {
     border-radius: 0px;
-    background: url(/assets/e4afe52f6863408a35654a6e5fd69ba9.svg) 155px 50% no-repeat #262626 !important;
+    background: url(https://canary.discordapp.com//assets/e4afe52f6863408a35654a6e5fd69ba9.svg) 155px 50% no-repeat #262626 !important;
     transition: all 0.2s ease;
 }
 
@@ -769,7 +769,7 @@
 
 .context-menu.theme-light .item-subMenu:hover {
     border-radius: 0px;
-    background: url(/assets/e4afe52f6863408a35654a6e5fd69ba9.svg) 155px 50% no-repeat #e8e8e8 !important;
+    background: url(https://canary.discordapp.com/assets/e4afe52f6863408a35654a6e5fd69ba9.svg) 155px 50% no-repeat #e8e8e8 !important;
     transition: all 0.2s ease;
 }
 
@@ -904,17 +904,17 @@
 }
 
 .theme-light .private-channels .channel .icon-friends {
-    background: url(/assets/78edad9e528abdda340ef4341ac52b57.svg) 50% no-repeat #000;
+    background: url(https://canary.discordapp.com/assets/78edad9e528abdda340ef4341ac52b57.svg) 50% no-repeat #000;
     transition: all 0.2s ease;
 }
 
 .theme-light .private-channels .channel:hover .icon-friends {
-    background: url(/assets/78edad9e528abdda340ef4341ac52b57.svg) 50% no-repeat #45c0f3;
+    background: url(https://canary.discordapp.com/assets/78edad9e528abdda340ef4341ac52b57.svg) 50% no-repeat #45c0f3;
     transition: all 0.2s ease;
 }
 
 .theme-light .private-channels .channel.selected .icon-friends {
-    background: url(/assets/78edad9e528abdda340ef4341ac52b57.svg) 50% no-repeat #24a9e2;
+    background: url(https://canary.discordapp.com/assets/78edad9e528abdda340ef4341ac52b57.svg) 50% no-repeat #24a9e2;
     transition: all 0.2s ease;
 }
 
@@ -1081,17 +1081,17 @@
 }
 
 .theme-dark .private-channels .channel .icon-friends {
-    background: url(/assets/78edad9e528abdda340ef4341ac52b57.svg) 50% no-repeat #1a1a1a;
+    background: url(https://canary.discordapp.com/assets/78edad9e528abdda340ef4341ac52b57.svg) 50% no-repeat #1a1a1a;
     transition: all 0.2s ease;
 }
 
 .theme-dark .private-channels .channel:hover .icon-friends {
-    background: url(/assets/78edad9e528abdda340ef4341ac52b57.svg) 50% no-repeat #262626;
+    background: url(https://canary.discordapp.com/assets/78edad9e528abdda340ef4341ac52b57.svg) 50% no-repeat #262626;
     transition: all 0.2s ease;
 }
 
 .theme-dark .private-channels .channel.selected .icon-friends {
-    background: url(/assets/78edad9e528abdda340ef4341ac52b57.svg) 50% no-repeat #000;
+    background: url(https://canary.discordapp.com/assets/78edad9e528abdda340ef4341ac52b57.svg) 50% no-repeat #000;
     transition: all 0.2s ease;
 }
 
@@ -1230,9 +1230,71 @@
 
 /* Guilds */
 
+.guilds-wrapper .guild-separator:after {
+    left: -10px;
+    width: calc(20px + 100%);
+    height: 1px;
+}
+
+.theme-dark .guilds-wrapper .guild-separator:after {
+    background: #444;
+}
+
 .theme-dark .guilds-wrapper {
     background-color: #262626;
     border-right: 1px solid #333;
+}
+
+.theme-dark .guilds-wrapper .guilds .guild.selected.unread:before,
+.theme-dark .guilds-wrapper .guilds .guild.selected:before,
+.theme-dark .guilds-wrapper .guilds .guild.unread:before {
+    z-index: 100;
+    background: #fff;
+}
+
+.theme-dark .guild-inner {
+    background: #222!important;
+    transition: all .05s ease;
+}
+
+.theme-dark .guild-inner:hover {
+    background: #333!important;
+    transition: all .05s ease;
+}
+
+/* ---------------------------------------- */
+
+.theme-light .guilds-wrapper .guild-separator:after {
+    background: #aacce5;
+}
+
+.theme-dark .guilds-wrapper .guild-separator:after {
+    background: #2e3136;
+}
+
+.theme-light .guilds-wrapper {
+    background-color: #dbe9f3;
+    border-right: 1px solid #aacce5;
+}
+
+.theme-light .guilds-wrapper .guilds .guild.selected.unread:before,
+.theme-light .guilds-wrapper .guilds .guild.selected:before,
+.theme-light .guilds-wrapper .guilds .guild.unread:before {
+    z-index: 100;
+    background: #00aff0;
+}
+
+.theme-light .guild-inner {
+    background: #01a1dc!important;
+    transition: .05s;
+}
+.theme-light .guild-inner:hover {
+    background: #00aff0!important;
+    transition: .05s;
+}
+
+.theme-light .guilds-wrapper .friends-online {
+    color: #a0c4e0;
 }
 
 /* Guilds */
