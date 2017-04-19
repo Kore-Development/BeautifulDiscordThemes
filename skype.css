@@ -997,17 +997,17 @@
     border-top: 1px solid #c7d8e5;
 }
 
-.theme-light #voice-connection {
+.theme-light #rtc-connection {
     background-color: #dceefb;
     border-top: 1px solid #c7d8e5;
 }
 
-.theme-light #voice-connection .voice-connection-channel {
+.theme-light #rtc-connection .rtc-connection-channel {
     color: #000;
     opacity: 0.7;
 }
 
-.theme-light #voice-connection .btn-info, .theme-light #voice-connection .btn-disconnect{
+.theme-light #rtc-connection .btn-info, .theme-light #rtc-connection .btn-disconnect{
     border-radius:50%!important;
     margin-right:6px;
     background: #00a3e0;
@@ -1015,7 +1015,7 @@
     box-shadow: inset 1px 0 0 #00a8e6;
 }
 
-#voice-connection .btn-group{
+#rtc-connection .btn-group{
     margin-left:20px;
     background:none;
     border:none;
@@ -1037,21 +1037,21 @@
 
 .account .btn:not(:hover):after,
 .account .btn-group .btn.disabled:not(:hover):after,
-#voice-connection .btn:not(:hover):after {
+#rtc-connection .btn:not(:hover):after {
     opacity: 0.5 !important;
 }
 
-#voice-connection .btn:hover:after {
+#rtc-connection .btn:hover:after {
     opacity: 1 !important;
 }
 
-.theme-light #voice-connection .btn:active {
+.theme-light #rtc-connection .btn:active {
     background: #0097cf;
 }
 
 /* ---------------------------------------- */
 
-.theme-dark #voice-connection .btn-info, .theme-dark #voice-connection .btn-disconnect{
+.theme-dark #rtc-connection .btn-info, .theme-dark #rtc-connection .btn-disconnect{
     border-radius:50%!important;
     margin-right:6px;
     background: #161616;
@@ -1059,11 +1059,11 @@
     box-shadow: inset 1px 0 0 #222;
 }
 
-.theme-dark #voice-connection .btn:active {
+.theme-dark #rtc-connection .btn:active {
     background: #161616;
 }
 
-.theme-dark #voice-connection {
+.theme-dark #rtc-connection {
     background-color: #111;
     border-top: 1px solid #333;
 }
@@ -1670,54 +1670,54 @@
 
 /* Connection Info */
 
-#voice-connection-popout .sparkline {
+#rtc-connection-popout .sparkline {
     padding: 5px 20px;
     margin-left: -20px;
     margin-top: -14px;
     width: 210px;
 }
 
-#voice-connection-popout .sparkline svg {
+#rtc-connection-popout .sparkline svg {
     height: 35px;
 }
 
-.theme-dark #voice-connection-popout section {
+.theme-dark #rtc-connection-popout section {
     background-color: #333;
 }
 
-.theme-dark #voice-connection-popout hr {
+.theme-dark #rtc-connection-popout hr {
     border-color: #3d3d3d;
 }
 
-.theme-dark #voice-connection-popout p {
+.theme-dark #rtc-connection-popout p {
     color: #ddd;
 }
 
-.theme-dark #voice-connection-popout section:after {
+.theme-dark #rtc-connection-popout section:after {
     border-top-color: #333;
 }
 
-.theme-dark #voice-connection-popout .sparkline {
+.theme-dark #rtc-connection-popout .sparkline {
     background-color: #222;
 }
 
-.theme-dark #voice-connection-popout .sparkline svg g polyline:nth-child(1) {
+.theme-dark #rtc-connection-popout .sparkline svg g polyline:nth-child(1) {
     fill: #fff !important;
 }
 
-.theme-dark #voice-connection-popout .sparkline svg g polyline:nth-child(2) {
+.theme-dark #rtc-connection-popout .sparkline svg g polyline:nth-child(2) {
     stroke: #fff !important;
 }
 
-.theme-light #voice-connection-popout .sparkline {
+.theme-light #rtc-connection-popout .sparkline {
     background-color: #ddd;
 }
 
-.theme-light #voice-connection-popout .sparkline svg g polyline:nth-child(1) {
+.theme-light #rtc-connection-popout .sparkline svg g polyline:nth-child(1) {
     fill: #000 !important;
 }
 
-.theme-light #voice-connection-popout .sparkline svg g polyline:nth-child(2) {
+.theme-light #rtc-connection-popout .sparkline svg g polyline:nth-child(2) {
     stroke: #000 !important;
 }
 
