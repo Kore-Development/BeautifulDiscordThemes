@@ -1717,6 +1717,27 @@
 
 /* User Settings */
 
+.user-settings-authorized-apps .header-info {
+    margin-left: 20px !important;
+    margin-top: 0px;
+}
+
+.user-settings-authorized-apps .header-info .style-label-bold {
+    white-space: nowrap;
+    text-align: left;
+}
+
+.user-settings-authorized-apps .authed-app .ui-flex-child:not(.style-label-bold) {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    margin-left: 0;
+}
+
+.user-settings-authorized-apps .authed-app .margin-bottom-20 {
+    margin-bottom: 40px;
+}
+
 .ui-tab-bar.SIDE .ui-tab-bar-item,
 .ui-tab-bar.SIDE .ui-tab-bar-item:hover,
 .ui-tab-bar.SIDE .ui-tab-bar-item.selected {
