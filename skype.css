@@ -114,7 +114,8 @@
 }
 
 .comment .channel-textarea-inner,
-.modal .channel-textarea-autocomplete {
+.modal .channel-textarea-autocomplete,
+.message-group:not(.hide-overflow) .channel-textarea-autocomplete  {
     width: 100% !important;
     left: 0% !important;
 }
@@ -1322,15 +1323,6 @@
 
 .theme-light .guilds-wrapper .guilds .guild.unread:before {
     background: #00ace0;
-}
-
-.guilds-wrapper .guilds-add {
-    position: fixed !important;
-    bottom: 25px;
-}
-
-.guilds-wrapper .scroller.guilds {
-    padding-bottom: 85px;
 }
 
 .theme-light .guilds-wrapper .guilds-add {
