@@ -2016,3 +2016,257 @@
 }
 
 /* Dark Mode Friends */
+
+/* User Profile (TripingPC#2094) */
+
+#user-profile-modal .header:after{visibility: hidden;}
+.avatar-wrapper{background-color: transparent!important;}
+#user-profile-modal .header{
+    background-color:#12A5F4!important;
+    background-image: none;
+    width: 200px;
+    height: 546px;
+    box-shadow: rgba(0, 0, 0, 0.298039) 0px 0px 8px 0px;
+    overflow: hidden;
+}
+
+#user-profile-modal{
+    display: flex;
+    flex-direction: row;
+    width: 750px;
+}
+
+.tab-bar-container{
+    display: inline!important;
+    width: 325px;
+    height: 56px!important;
+    padding:0;
+    margin: 0;
+    background: #FFFFFF!important;
+    z-index: 99;
+}
+
+#user-profile-modal .tab-bar .tab-bar-item.selected {
+    color: #000000;
+}
+
+#user-profile-modal .tab-bar .tab-bar-item {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#user-profile-modal .scroller, #user-profile-modal > div.tab-bar-container > div {
+    width: 350px;
+}
+
+#user-profile-modal .header .additional-actions-icon:after {
+    content: '';
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    z-index: 5;
+    position: absolute;
+    top: 15px;
+    right: calc(50% - 9px);
+    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_keyboard_arrow_down_white_24px.svg);
+    background-size: cover;
+    transition: all .2s ease;
+}
+
+#user-profile-modal .header .additional-actions-icon:hover:after {
+    width: 24px;
+    height: 24px;
+    top: 12px;
+    right: calc(50% - 12px);
+    transition: all .2s ease;
+}
+
+#user-profile-modal .header .additional-actions-icon:before {
+    content: 'Actions';
+    color: #fff;
+    line-height: 24px;
+    transition: all .2s ease;
+}
+
+#user-profile-modal .header .additional-actions-icon:hover:before {
+    font-size: 20px;
+    line-height: 18px;
+    transition: all .2s ease;
+}
+
+#user-profile-modal .header .additional-actions-icon {
+    left: 0px;
+    top: 0px;
+    display: block;
+    width: 203px;
+    background-image: linear-gradient(to bottom, rgba(86,193,251,1) 0%, rgba(16,164,244,1) 100%);
+    text-align: center;
+    line-height: 24px;
+    vertical-align: middle;
+    transition: background-image .2s ease;
+}
+
+#user-profile-modal .tab-bar-container {
+    box-shadow: none;
+    padding-right: 332px;
+    border-top-right-radius: 5px;
+}
+
+#user-profile-modal .guilds .section .connected-accounts .connected-account {
+    margin-left: 20px;
+}
+
+#user-profile-modal > div.tab-bar-container > div {
+    margin:0!important;
+    left: 230px!important;
+    position: absolute;
+    background-color: #FFFFFF!important;
+    z-index: 99!important;
+    width: 335px;
+    border-top-right-radius: 5px;
+}
+
+#user-profile-modal .header .header-info .badge-premium {
+    position: absolute;
+    top: -150px;
+    left: 15px;
+}
+
+#user-profile-modal .actions .btn.add-friend {
+    position: absolute;
+    left: 30px;
+    top: 30em;
+}
+
+#user-profile-modal .empty {
+    position: relative;
+    width: 660px;
+    right: 545px;
+    padding-left: 219px;
+    padding-right: 218px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#user-profile-modal .empty .spinner {
+    margin: 33px;
+}
+
+#user-profile-modal .header .header-info .header-info-inner {
+    position: absolute;
+}
+
+#user-profile-modal .guilds .avatar-large {
+    background-color: transparent;
+}
+
+.header-info{
+    position: absolute;
+    width: 215px!important;
+    left: 0px;
+    text-align: center;
+    margin-top: -80px;
+    color: white!important;
+}
+
+.header-info-inner, .header-info-inner.activity{
+    width: 215px!important;
+    color: white;
+}
+.header-info-inner .discord-tag{color: white!important;}
+.header-info-inner .activity{
+    padding-left: 0;
+    padding-right: 0;
+    width: 215px!important;
+}
+
+.header-info .profile-badge:not(.badge-premium) {
+    width: 100%!important;
+    margin-top: 150px;
+    margin-right: 0!important;
+    background-position-x: 50%!important;
+    height: 50px!important;
+    background-size: contain;
+    background-color: #4fbcf7;
+    z-index: 2;
+    transition: all .2s ease;
+}
+
+.header-info .profile-badge:not(.badge-premium):before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-left: 0%;
+    box-shadow: #4fbcf7 0px 0px 20px 0px;
+    z-index: 1;
+    transition: all .2s ease;
+}
+.header-info .profile-badge:hover:not(.badge-premium) {
+    background-color: #6ac9fd;
+    transition: all .2s ease;
+}
+
+.header-info .profile-badge:hover:not(.badge-premium):before {
+    box-shadow: #6ac9fd 0px 0px 20px 0px;
+    transition: all .2s ease;
+}
+
+#user-profile-modal > div.scroller-wrap.fade{
+    height: 487px!important;
+    top: 55px;
+    border-top: white 4px solid!important;
+    margin-left: -3px;
+    left: -542px;
+    border-bottom-right-radius: 5px;
+}
+
+#user-profile-modal .scroller {
+    border-bottom-right-radius: 5px;
+    width: 535px;
+}
+#user-profile-modal .guilds .section .connected-accounts .connected-account:nth-child(odd) {
+    margin-left: 18px;
+}
+#user-profile-modal .guilds .section .connected-accounts .connected-account:nth-child(even) {
+    margin-right: 15px;
+}
+#user-profile-modal .scroller .section:nth-child(2) {
+    margin-right: 5px;
+    margin-left: 10px;
+}
+.scroller.guilds{
+    width: 450px;
+}
+
+.btn-add-friend{
+    left: 0!important;
+    position: absolute!important;
+}
+
+#user-profile-modal .guilds .guild:hover .status {
+    background-color: #f9f9f9;
+}
+
+#user-profile-modal .header .header-info .header-info-inner .discord-tag .discriminator {
+    font-size: 16px;
+    color: rgba(255,255,255,.5);
+}
+#user-profile-modal .header .header-info .header-info-inner .activity {
+    color: #b4e2fb;
+}
+
+.avatar-profile .status {
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    border: 4px solid #12A5F4;
+    background-color: #12A5F4;
+    bottom: 2px;
+    right: 2px;
+}
+#user-profile-modal .header .header-info .bot-tag {
+    background-color: #fff !important;
+    color: #00aff0 !important;
+}
+
+/* User Profile (TripingPC#2094) */
