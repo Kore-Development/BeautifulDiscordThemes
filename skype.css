@@ -846,7 +846,7 @@
 
 /* Context Menu */
 
-/* Account Buttons (TripingPC#2094) */
+/* Account Buttons (TripingPC#2094) tweaked by Snazzah */
 
 .btn-mute, .btn-deafen, .btn-settings{
     border-radius:50%!important;
@@ -868,7 +868,38 @@
     background:#2e3136;
 }
 
-.account-details{display:none;}
+.avatar-small:not(:hover)+.account-details{
+    overflow: hidden !important;
+    padding: 0 !important;
+    margin-left: -10px;
+    color: transparent;
+    transition: all 0.2s ease;
+}
+
+.avatar-small:not(:hover)+.account-details .discriminator{
+    overflow: hidden !important;
+    transition: all 0.2s ease;
+}
+
+.theme-dark .avatar-small:hover+.account-details{
+    transition: all 0.2s ease;
+    color: #fff;
+}
+
+.theme-light .avatar-small:hover+.account-details{
+    transition: all 0.2s ease;
+    color: #000;
+}
+
+.avatar-small:hover+.account-details+.btn-group .btn{
+    transition: all 0.2s ease;
+    opacity: 0;
+}
+
+.avatar-small+.account-details+.btn-group .btn{
+    transition: all 0.2s ease;
+    opacity: 1;
+}
 
 .account .btn:after{margin-left:0px;}
 
