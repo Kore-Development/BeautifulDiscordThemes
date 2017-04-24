@@ -1391,6 +1391,12 @@
     transition: all 0.2s ease;
 }
 
+.new-messages-indicator {
+    font-size: 0;
+    width: auto;
+    padding-right: 5px;
+}
+
 /* Guilds */
 
 /* Embed Buttons */
