@@ -2054,7 +2054,7 @@
 
 /* Dark Mode Friends */
 
-/* User Profile (TripingPC#2094) */
+/* User Profile (TripingPC#2094) tweaked by Snazzah */
 
 #user-profile-modal .header:after{visibility: hidden;}
 .avatar-wrapper{background-color: transparent!important;}
@@ -2306,4 +2306,43 @@
     color: #00aff0 !important;
 }
 
-/* User Profile (TripingPC#2094) */
+/* User Profile */
+
+/* Auto-Complete Popout */
+
+.theme-dark #autocomplete-popout section {
+    background-color: rgba(50,50,50,.98);
+}
+
+.theme-dark #autocomplete-popout section .scroller div.selected, .theme-dark #autocomplete-popout section .scroller div:hover {
+    background: rgba(0,0,0,.2);
+    transition: all .2s ease;
+}
+
+.theme-dark #autocomplete-popout section .scroller div {
+    transition: all .2s ease;
+}
+
+.theme-dark #autocomplete-popout section:after {
+    border-top-color: rgba(50,50,50,.98);
+}
+
+.theme-dark #autocomplete-popout .empty p {
+    color: #cbced2;
+}
+
+.theme-dark #autocomplete-popout .row.selected a, .theme-dark #autocomplete-popout .row:hover a {
+    color: #ddd;
+}
+
+.theme-dark #autocomplete-popout section .scroller::-webkit-scrollbar-thumb {
+    background-color: rgba(20,20,20,.98);
+    border: 3px solid rgba(50,50,50,.98);
+}
+
+.theme-dark #autocomplete-popout section .scroller::-webkit-scrollbar-track-piece {
+    background-color: rgba(40,40,40,.98);
+    border: 3px solid rgba(50,50,50,.98);
+}
+
+/* Auto-Complete Popout */
